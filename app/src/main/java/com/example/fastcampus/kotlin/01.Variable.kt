@@ -1,4 +1,4 @@
-package com.example.fastcampus.kotlin
+package com
 
 //변수
 //  - variable : 변할 수 있음
