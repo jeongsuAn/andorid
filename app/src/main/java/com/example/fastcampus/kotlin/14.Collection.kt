@@ -25,15 +25,15 @@ fun main(arg :Array<String>){
 
     // Mutable 변경가능.
     // 변수를 val로 설정했는데 추가가 가능하네..
-    val mNumberList = mutableListOf<Int>(1,2,3)
+    var mNumberList = mutableListOf<Int>(1,2,3)
     mNumberList.add(3,4)
     println()
     println(mNumberList)
 
-    val mNuberSet = mutableSetOf<Int>(1,2,3,4,4,4)
+    var mNuberSet = mutableSetOf<Int>(1,2,3,4,4,4)
     mNuberSet.add(10)
     println(mNuberSet)
-    val mNumberMap = mutableMapOf<String,Int>("one" to 1)
+    var mNumberMap = mutableMapOf<String,Int>("one" to 1)
     mNumberMap.put("two",2)
     println(mNumberMap)
 }
