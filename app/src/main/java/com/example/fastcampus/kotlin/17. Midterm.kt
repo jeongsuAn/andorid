@@ -3,6 +3,7 @@ package com.example.fastcampus.kotlin
 fun main(array: Array<String>){
     firsT()
     println(seconD(80))
+    gugudan()
 }
 
 fun firsT(){
@@ -37,6 +38,21 @@ fun seconD(score: Int):String{
             return "F"
         }
 
+    }
+}
+
+fun thirD(number : Int ):Int {
+    val a : Int = number /10
+    val b : Int = number%10
+
+    return a + b
+}
+
+fun gugudan(){
+    for (x in 1..9){
+        for(y in 1..9){
+            println("$x * $y = ${x*y}")
+        }
     }
 
 
