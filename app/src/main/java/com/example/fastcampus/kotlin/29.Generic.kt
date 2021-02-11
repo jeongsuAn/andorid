@@ -12,7 +12,7 @@ fun main(args: Array<String>){
 
     //강한 타입을 체크할 수 있다.
     val list3 = listOf(1,2,3,4,"가","나",2.0)
-    val list4 = listOf<Int>(1,2,3,"가") // 강한 타입 체크
+ //   val list4 = listOf<Int>(1,2,3,"가") // 강한 타입 체크
 
     // 제너릭을 사용하지 않은 경우
     val list5 = listOf<Any>(1,2,3,"가")
