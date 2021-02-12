@@ -51,7 +51,7 @@
         android:layout_height="100dp"
         android:background="#FF9800"
         android:layout_below="@id/view1"
-        android:layout_alignLeft="@id/view1"
+        android:layout_alignLeft="@id/view1"/>
 
     <TextView
         android:layout_width="100dp"
@@ -65,7 +65,7 @@
         android:layout_height="100dp"
         android:background="#CDDC39"
         android:layout_alignBottom="@id/view1"
-        android:layout_toRightOf="@id/view1"
+        android:layout_toRightOf="@id/view1"/>
 
 
 
