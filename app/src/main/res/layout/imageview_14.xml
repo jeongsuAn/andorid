@@ -14,7 +14,7 @@
     <ImageView
         android:layout_width="350dp"
         android:layout_height="350dp"
-        android:src="@drawable/jeongsuAn"
+        android:src="@drawable/ls"
         android:scaleType="centerCrop"/>
 
 
