@@ -41,4 +41,5 @@ dependencies {// 이런 라이브러리가 추가되어있다
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
 }
