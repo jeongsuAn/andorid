@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Linstener">
+    tools:context=".Linstener"
+    android:orientation="vertical">
     <TextView
         android:id="@+id/helloButton"
         android:layout_width="100dp"
@@ -12,5 +13,10 @@
         android:background="@color/purple_200"
         android:text="hello_ button"
         android:textSize="30sp"/>
+    <ImageView
+        android:id="@+id/helloImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/gradient"/>
 
 </LinearLayout>
