@@ -27,7 +27,7 @@ class Intent2 : AppCompatActivity() {
             val result = number1 + number2
 
             val resultIntent = Intent()
-            resultIntent.putExtra("result = ", result)
+            resultIntent.putExtra("result", result)
 
             setResult(Activity.RESULT_OK,resultIntent)
             finish( )//finish()는 엑티비티 종료를 나타냄(스택으로 생각하면 편함)

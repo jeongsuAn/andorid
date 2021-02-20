@@ -16,3 +16,7 @@ intent를 설정하기 위해서는
 
 intent에 정보를 담기 위해서는
     putExtra()라는 함수를 이용한다!
+
+- intent 종류
+    - 명시적 intent -> 정확한 대상을 지명하여 요청
+    - 암시적 intent -> 할 수 있는 대상에게 요청

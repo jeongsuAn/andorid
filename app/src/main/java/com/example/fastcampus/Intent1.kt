@@ -1,6 +1,7 @@
   package com.example.fastcampus
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -24,15 +25,18 @@ import android.widget.Button
 //            //이제 이 값을 Intent2에서 받아올 예정!
 //            startActivity(intent)
 
-            var intent2 = Intent(this@Intent1,Intent2::class.java)
-            //Apply->
-            //Apply가 있으면 이 내용이 여기에만 있다는걸 묵시적으로 알려주는 것이므로 유지보수가 편함
-            intent2.apply{
-                this.putExtra("number1",3)
-                this.putExtra("number2",4)
-            }
-            startActivityForResult(intent2,200)//requestCode는 임의로 200이라고 작성
+//            var intent2 = Intent(this@Intent1,Intent2::class.java)
+//            //Apply->
+//            //Apply가 있으면 이 내용이 여기에만 있다는걸 묵시적으로 알려주는 것이므로 유지보수가 편함
+//            intent2.apply{
+//                this.putExtra("number1",3)
+//                this.putExtra("number2",4)
+//            }
+//            startActivityForResult(intent2,200)//requestCode는 임의로 200이라고 작성
 
+            // 암시적 intent
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://m.naver.com"))
+            startActivity(intent)
         }
 
     }
