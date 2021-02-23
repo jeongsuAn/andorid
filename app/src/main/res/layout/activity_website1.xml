@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".website1">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+"
+    <EditText
+        android:layout_marginTop="200dp"
+        android:id="@+id/web_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:hint="인터넷주소를 입력해주세요"
+        android:textColorHint="#E91E63"
+        android:textAlignment="center"
+        android:focusable="true"
+        android:inputType="text"
+
+        ></EditText>
+
+    <Button
+        android:id="@+id/web_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="인터넷 페이지 열기"
+        android:layout_marginLeft="20dp"></Button>
+
+</LinearLayout>

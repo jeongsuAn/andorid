@@ -27,4 +27,10 @@ LaunchMode              다중허용
 -singleInstance           x
 
 인텐트 플레그
+FLAG_ACTIVITY_NEW_TASK
+FLAG_ACTIVITY_SINGLE_TOP
+FLAG_ACTIVITY_CLEAR_TOP
+등등
 
+
+과제 에디트텍스트
