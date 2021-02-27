@@ -15,3 +15,11 @@ Fragment
 Fragment
 -라이프 사이클이 존재한다
 -엑티비티 종속적이다
+
+사용방법
+- XML에 ViewCompont로 추가한다
+- 코드로(동적으로) 추가한다
+
+데이터 전달 방법
+- Activity -> Fragment : argument와 bundle
+- Fragment -> Activity : 자체 구현 (리스너 구현)

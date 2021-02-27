@@ -1,20 +1,29 @@
 package com.example.fastcampus
 
 import android.content.Context
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 
 
 class FragmentOne:Fragment(){
 
+    //프라그먼트에서 엑티비티에 정보를 보내주기 위해 만듬
+    interface OnDataPassListener{
+        fun onDataPass(data: String?)//여기엔 아직 내용이 없으므로 내용을 구현해야한다.ㅍ
+    }
 
+    lateinit var dataPassListener : OnDataPassListener
     override fun onAttach(context: Context) {
         Log.d("life_cycle","F onAttach")
         super.onAttach(context)
+        dataPassListener = context as OnDataPassListener //context를 명시적 형변환 시켜줌
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,10 +47,18 @@ class FragmentOne:Fragment(){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         Log.d("life_cycle","F onViewCreated")
         super.onViewCreated(view, savedInstanceState)
+        // Activity의 Oncreate에서 했던 작업을 여기에서 한다.
+        val passButton: Button = view.findViewById(R.id.pass)
+        passButton.setOnClickListener {
+            dataPassListener.onDataPass("good bye")
+        }
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         Log.d("life_cycle","F onActivityCreated")
+        val data = arguments?.getString("hello_key")
+        Log.d("data",""+data)
+
         super.onActivityCreated(savedInstanceState)
     }
 

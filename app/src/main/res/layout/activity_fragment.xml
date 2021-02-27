@@ -13,11 +13,32 @@
         android:text="안녕하세요"
         android:textSize="50dp"/>
 
-    <fragment
-        android:id="@+id/fragment_one"
-        android:name="com.example.fastcampus.FragmentOne"
+<!--    <fragment-->
+<!--        android:id="@+id/fragment_one"-->
+<!--        android:name="com.example.fastcampus.FragmentOne"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="300dp"/>-->
+
+    <Button
+        android:id="@+id/button_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="나와라"
+        android:textColor="@color/white"
+        android:textSize="30dp"/>
+    <Button
+        android:id="@+id/button_fragment2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사라져라"
+        android:textColor="@color/white"
+        android:textSize="30dp"/>
+    <LinearLayout
+        android:id="@+id/container_1"
         android:layout_width="match_parent"
-        android:layout_height="300dp"/>
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@color/purple_200"/>
 
 
 
