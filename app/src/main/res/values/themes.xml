@@ -14,7 +14,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="MtTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="MtTheme" parent="Theme.AppCompat.Light">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#FF5722</item>
         <item name="colorPrimaryVariant">#FF9800</item>

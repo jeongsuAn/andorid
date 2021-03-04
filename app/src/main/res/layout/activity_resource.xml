@@ -9,7 +9,7 @@
         android:id="@+id/button_resource"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:backgroundTint="@color/hello"/>
+        android:background="@color/hello"/>
 
 
 

@@ -19,7 +19,7 @@ class Resource : AppCompatActivity() {
 
         val Button_resource = findViewById<Button>(R.id.button_resource)
 
-        Button_resource.setBackgroundColor(getColor(R.color.purple_500))
+        Button_resource.setBackgroundColor(getColor(R.color.black))
 
 
 
