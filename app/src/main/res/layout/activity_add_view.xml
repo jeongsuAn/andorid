@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ThreadActivity">
+    tools:context=".AddViewActivity">
 
-    <TextView
-        android:id="@+id/threadButton"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@color/hello"/>
+    <LinearLayout
+        android:id="@+id/addview_container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
